@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pisces Aquarium</title>
+  <link rel="stylesheet" href="style_form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <!-- nav bar -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Pisces</label>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about_fishes.html"> ABOUT FISHES</a></li>
+        <li><a href="signup.html">SIGN UP</a></li>
+      </ul>
+    </nav>
+    </header>
+  <div class="temp"> 
+    <form id="contact-form" name="contactForm" onsubmit="validateForm()">
+        <h2>Registration</h2>
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password">
+            <div class="error" id="pwErr"></div>
+        </div>
+        <div class="row">
+            <label>Country</label>
+            <select name="country">
+                <option>Select</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Singapore">Singapore</option>
+            </select>
+            <div class="error" id="countryErr"></div>
+        </div>
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday">
+        <div class="row">
+            <label>Gender</label>
+            <div class="form-inline">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <div class="error" id="genderErr"></div>
+        </div>
+        <div class="row-1">
+            <label>Terms of Service <i>(Required)</i></label>
+            <div class="form-inline">
+                <label><input type="checkbox" name="subscribe" value="centang" required> 
+                  You need to accept the terms and condition to continue.
+                  </label>
+            </div>
+            <div class="error" id="subsErr"></div>
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>
+<footer>
+  <div class="hero">
+    <div class="social-links">
+      <a href="https://www.facebook.com/MyJaq" target ="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jakartaaquarium/" target ="_blank"> <i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCfAjBHSFAN_GrMFE-tsAUfw?feature=emb_ch_name_ex" target ="_blank"><i
+          class="fab fa-youtube"></i></a>
+    </div>
+    <p class="color"> Copyright @ 2022 Edward Effenlie. All rights reserved.</p>
+    <p class="color"> Contact at +62 xxxxxxxxxxxx</p>
+    <p class="color"> edward.effenlie@binus.ac.id </p>
+  </div>
+</footer>
+</body>
+
+</html>
